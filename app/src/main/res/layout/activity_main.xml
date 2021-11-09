@@ -9,6 +9,7 @@
     android:weightSum="6"
     tools:context=".MainActivity">
 
+  <!-- Adding textview for the screen -->
     <TextView
         android:id="@+id/screen"
         android:layout_width="match_parent"
@@ -23,6 +24,9 @@
         android:layout_marginBottom="30dp"
         android:layout_marginHorizontal="10dp"
         android:padding="10dp"/>
+    
+    <!-- creating linear layout and declaring the  buttons AC,Power,backspace,divison -->
+    <!-- add onclick listener for each button -->
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -80,6 +84,8 @@
 
     </LinearLayout>
 
+    <!-- creating linear layout and declaring the  buttons seven,eight,nine,multiplication -->
+     <!-- add onclick listener for each button -->
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -136,6 +142,9 @@
 
     </LinearLayout>
 
+    <!-- creating linear layout and declaring the  buttons four,five,six,substaction -->
+     <!-- add onclick listener for each button -->
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -190,6 +199,10 @@
             android:background="@drawable/ic_launcher_background"/>
 
     </LinearLayout>
+    
+    <!-- creating linear layout and declaring the  buttons one,two,three,addition -->
+     <!-- add onclick listener for each button -->
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
@@ -244,6 +257,10 @@
             android:background="@drawable/ic_launcher_background"/>
 
     </LinearLayout>
+    
+    <!-- creating linear layout and declaring the  buttons zero,point,ans, equal -->
+     <!-- add onclick listener for each button -->
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
