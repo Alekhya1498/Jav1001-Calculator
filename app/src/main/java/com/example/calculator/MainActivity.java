@@ -8,13 +8,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    //declare screen text view
     private TextView Screen;
-    private Button AC,Power,Back,Div,One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Zero,Ans,Equal,Addition,Sub,Multiplication,Point;
+    //Declare all keyboard buttons 
+    private Button AC,Power,Back,Div,One,Two,Three,Four,Five,Six,Seven,Eight,Nine,Zero,Ans,Equal,Addition,Sub,Multiplication,Point; 
+    // declare String to get input and answer string is for taking the solution
     private String input,Answer;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //assigning the variables to specific id's
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Screen=findViewById(R.id.screen);
@@ -39,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
         Multiplication=findViewById(R.id.multiplication);
         Point=findViewById(R.id.point);
     }
+    // create button click method 
     public void ButtonClick(View view){
         Button button=(Button) view;
+        // declare data string for getting the button text 
         String data=button.getText().toString();
+        // using switch case data define for each buttons
         switch (data){
             case"AC":
                 input="";
@@ -74,10 +81,12 @@ public class MainActivity extends AppCompatActivity {
                 }
                 input+=data;
         }
+        // to display on the screen 
         Screen.setText(input);
     }
 
     private void Solve(){
+        // using split method to identify between numbers and operators
         if(input.split("\\*").length==2){
             String number[]=input.split("\\*");
             try {
